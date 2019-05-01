@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="166dp">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            tools:srcCompat="@drawable/hatimage"
+            android:id="@+id/categoryImage"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"
+            android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginBottom="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoryTitle" app:layout_constraintEnd_toEndOf="@+id/categoryImage"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/categoryImage"
+            android:textSize="24sp"
+            android:textColor="@android:color/white" android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.498" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/categoryImage" tools:text="HATS" android:textAlignment="center"/>
+</android.support.constraint.ConstraintLayout>
